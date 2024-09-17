@@ -1,0 +1,129 @@
+/* تصميم عام */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    direction: rtl; /* محاذاة من اليمين لتناسب النصوص العربية */
+    background-color: #111;
+    color: #fff;
+}
+
+/* الهيدر */
+header {
+    background-color: #222;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 3em;
+    color: #f9a825;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* الحاوية العامة */
+.container {
+    display: flex;
+    flex-direction: row-reverse; /* لجعل الإعلانات على اليمين */
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* قسم المحتوى الرئيسي */
+.main-content {
+    flex: 3;
+    padding: 20px;
+    background-color: #333;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    margin-left: 20px; /* ترك مسافة بين المحتوى والإعلانات */
+    text-align: right; /* محاذاة النص من اليمين */
+}
+
+/* قسم الإعلانات */
+.sidebar {
+    flex: 1;
+    padding: 20px;
+    background-color: #222;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+
+/* العناوين */
+h2, h3, h4 {
+    color: #f9a825;
+    text-align: right;
+    margin-bottom: 15px;
+}
+
+/* النصوص */
+p {
+    line-height: 1.8; /* تحسين المسافة بين الأسطر */
+    color: #ddd;
+    margin-bottom: 15px;
+    text-align: right; /* محاذاة الفقرات من اليمين */
+}
+
+ul {
+    text-align: right;
+    color: #ddd;
+    margin-bottom: 15px;
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+/* الفوتر */
+footer {
+    background-color: #222;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+footer nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+footer nav ul li {
+    display: inline-block;
+}
+
+footer nav ul li a {
+    color: #f9a825;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer nav ul li a:hover {
+    text-decoration: underline;
+}
